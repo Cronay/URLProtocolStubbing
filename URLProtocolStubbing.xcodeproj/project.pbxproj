@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AE3B098126CABC8B00EC814D /* URLProtocolStubbing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3B097726CABC8B00EC814D /* URLProtocolStubbing.framework */; };
-		AE3B098626CABC8B00EC814D /* URLProtocolStubbingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B098526CABC8B00EC814D /* URLProtocolStubbingTests.swift */; };
-		AE3B098826CABC8B00EC814D /* URLProtocolStubbing.h in Headers */ = {isa = PBXBuildFile; fileRef = AE3B097A26CABC8B00EC814D /* URLProtocolStubbing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,10 +22,8 @@
 
 /* Begin PBXFileReference section */
 		AE3B097726CABC8B00EC814D /* URLProtocolStubbing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLProtocolStubbing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3B097A26CABC8B00EC814D /* URLProtocolStubbing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLProtocolStubbing.h; sourceTree = "<group>"; };
 		AE3B097B26CABC8B00EC814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3B098026CABC8B00EC814D /* URLProtocolStubbingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLProtocolStubbingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3B098526CABC8B00EC814D /* URLProtocolStubbingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStubbingTests.swift; sourceTree = "<group>"; };
 		AE3B098726CABC8B00EC814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +67,6 @@
 		AE3B097926CABC8B00EC814D /* URLProtocolStubbing */ = {
 			isa = PBXGroup;
 			children = (
-				AE3B097A26CABC8B00EC814D /* URLProtocolStubbing.h */,
 				AE3B097B26CABC8B00EC814D /* Info.plist */,
 			);
 			path = URLProtocolStubbing;
@@ -80,7 +75,6 @@
 		AE3B098426CABC8B00EC814D /* URLProtocolStubbingTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE3B098526CABC8B00EC814D /* URLProtocolStubbingTests.swift */,
 				AE3B098726CABC8B00EC814D /* Info.plist */,
 			);
 			path = URLProtocolStubbingTests;
@@ -93,7 +87,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3B098826CABC8B00EC814D /* URLProtocolStubbing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3B098626CABC8B00EC814D /* URLProtocolStubbingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
