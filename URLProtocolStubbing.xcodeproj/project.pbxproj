@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AE3B098126CABC8B00EC814D /* URLProtocolStubbing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3B097726CABC8B00EC814D /* URLProtocolStubbing.framework */; };
+		AE3B099226CABCAF00EC814D /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B099126CABCAF00EC814D /* RequestHandlerTests.swift */; };
+		AE3B099426CABCDD00EC814D /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B099326CABCDD00EC814D /* RequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,8 @@
 		AE3B097B26CABC8B00EC814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3B098026CABC8B00EC814D /* URLProtocolStubbingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLProtocolStubbingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3B098726CABC8B00EC814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3B099126CABCAF00EC814D /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
+		AE3B099326CABCDD00EC814D /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3B097B26CABC8B00EC814D /* Info.plist */,
+				AE3B099326CABCDD00EC814D /* RequestHandler.swift */,
 			);
 			path = URLProtocolStubbing;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3B098726CABC8B00EC814D /* Info.plist */,
+				AE3B099126CABCAF00EC814D /* RequestHandlerTests.swift */,
 			);
 			path = URLProtocolStubbingTests;
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 				TargetAttributes = {
 					AE3B097626CABC8B00EC814D = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					AE3B097F26CABC8B00EC814D = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -187,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3B099426CABCDD00EC814D /* RequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3B099226CABCAF00EC814D /* RequestHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +342,7 @@
 		AE3B098C26CABC8B00EC814D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -349,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.yannic-borgfeld.URLProtocolStubbing";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -356,6 +368,7 @@
 		AE3B098D26CABC8B00EC814D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -380,6 +393,8 @@
 		AE3B098F26CABC8B00EC814D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L3YMK7ENYC;
@@ -391,6 +406,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.yannic-borgfeld.URLProtocolStubbingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -398,6 +414,8 @@
 		AE3B099026CABC8B00EC814D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L3YMK7ENYC;
