@@ -100,7 +100,7 @@ class RequestHandlerTests: XCTestCase {
         }
         
         override class func canonicalRequest(for request: URLRequest) -> URLRequest {
-            return request
+            request
         }
         
         override func startLoading() {
