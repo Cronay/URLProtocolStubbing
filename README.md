@@ -6,4 +6,5 @@ Here I show a simple way to test a simple `RequestHandler`.
 This code was accompanied by a presentation in my workplace. If you want to know more about this approach I can recommend looking into the docs or watching Apple's WWDC Session.
 
 WWDC Talk: https://developer.apple.com/videos/play/wwdc2018/417
+
 Apple Docs: https://developer.apple.com/documentation/foundation/urlprotocol
